@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/LENOVO IP3/AndroidStudioProjects/AndroidRecyclerView_04/app/src/main/res/drawable-anydpi/ic_add_for_fab.xml" value="0.188" />
         <entry key="..\:/Users/LENOVO IP3/AndroidStudioProjects/AndroidRecyclerView_04/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/LENOVO IP3/AndroidStudioProjects/AndroidRecyclerView_04/app/src/main/res/layout/content_main.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/LENOVO IP3/AndroidStudioProjects/AndroidRecyclerView_04/app/src/main/res/layout/ctivity_detail.xml" value="0.17864583333333334" />
+        <entry key="..\:/Users/LENOVO IP3/AndroidStudioProjects/AndroidRecyclerView_04/app/src/main/res/layout/item_list.xml" value="0.17864583333333334" />
         <entry key="..\:/Users/LENOVO IP3/AndroidStudioProjects/AndroidRecyclerView_04/app/src/main/res/layout/wordlist_item.xml" value="0.17552083333333332" />
       </map>
     </option>

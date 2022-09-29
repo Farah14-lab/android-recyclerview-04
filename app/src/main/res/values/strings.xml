@@ -9,4 +9,40 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="bedak_name">COLORFIT VELVET POWDER FOUNDATION</string>
+    <string name="bedak_description">Wardah Colorfit Velvet Powder Foundation merupakan kombinasi foundation dan bedak yang terasa halus untuk memberikan coverage yang natural namun buildable (dapat diatur untuk medium hingga high coverage). Mampu memberikan finish yang dapat menyatu dengan baik wajah dan mampu menyamarkan pori serta menahan minyak secara tahan lama hingga 12 jam.</string>
+    <string name="bedak_details"><b>Ingredients</b>
+        \n
+        Talc, Titanium Dioxide, Ethylhexyl Methoxycinnamate, Silica, Isopropyl Myristate, Nylon-12, Octyldodecanol, Dipentaerythrityl Hexahydroxystearate/Hexastearate/Hexarosinate, Phenoxyethanol, Triethoxycaprylylsilane, PCA Dimethicone, Aluminum Hydroxide, Dimethicone, HDI/Trimethylol Hexyllactone Crosspolymer, Hydrogen Dimethicone, Polymethyl Methacrylate, Ethylhexylglycerin, Methicone, Fragrance, Tocopheryl Acetate,
+    <b>Directions</b>
+    \n
+    1. Aplikasikan bedak pada wajah dengan menggunakan spons
+        \n 2. Lipat spons menjadi dua bagian untuk meratakan powder foundation di daerah bawah mata
+    </string>
+    <string name="blushon_name">COLORFIT CREAM BLUSH</string>
+    <string name="blushon_description">Cream Blush with cream to powder texture. Infused with Vitamin E. Airy light and smooth creamy consistency allow blush to easily blend on skin or foundation. Glow Color pigment, gives intense long lasting color. Fresh blushing looks for up to 8 hours!</string>
+    <string name="blushon_details"><b>Ingredients</b>
+\n1/2 Talc, Titanium Dioxide, Ethylhexyl Methoxycinnamate, Silica, Isopropyl Myristate, Nylon-12, Octyldodecanol, Dipentaerythrityl Hexahydroxystearate/Hexastearate/Hexarosinate, Phenoxyethanol, Triethoxycaprylylsilane
+    \n\n<b>Directions</b>
+\n1. Aplikasikan Wardah Colorfit Cream Blush di area pipi dengan mengoleskan cream blush menggunakan jari/sponge. Colorfit Cream Blush dapat diaplikasikan setelah menggunakan foundation maupun bedak.</string>
+    <string name="concealer_name">LIGHTENING LIQUID CONCEALER</string>
+    <string name="concealer_description">Wardah Lightening Liquid Concealer adalah concealer dengan medium-to-high coverage untuk menutupi noda hitam dan bekas jerawat di wajah. Formula ringan dan nyaman untuk digunakan sehari-hari.</string>
+    <string name="concealer_details"><b>Ingredients</b>
+\n3 Aqua, Cyclopentasiloxane, Phenyl Trimethicone, Cyclohexasiloxane, Butylene Glycol, Triethylhexanoin, Cetyl PEG/PPG-10/1 Dimethicone, PEG-10 Dimethicone, Disteardimonium Hectorite, Magnesium Sulfate, Phenoxyethanol, Silica, Triethoxycaprylylsilane, Aluminum Hydroxide, Niacinamide,
+    \n\n<b>Directions</b>
+\n1. Titikkan Wardah Lightening Liquid Concealer secukupnya pada area yang diperlukan (bawah mata/ bekas jerawat)
+\n2. Ratakan menggunakan tangan/brush/sponge
+\n3. Wajah cerahmu siap menjalani aktivitas
+    </string>
+    <string name="lip_name">DIOR ADDICT LIP TATTOO</string>
+    <string name="lip_description">Dior Addict Lip Tattoo dikemas dalam badan tube yang sesuai warna produk di dalamnya, dengan aksen warna silver di bagian atasnya. Dengan kemasan yang didominasi dengan warna produk seperti ini sangat memudahkan kalau Anda memiliki banyak lipstik di rumah atau mengoleksi rangkaian Dior Addict Lip Tattoo ini. </string>
+    <string name="lip_details"><b>Ingredients</b>
+\n1 Cyclopentasiloxane, Phenyl Trimethicone, Cyclohexasiloxane, Butylene Glycol, Triethylhexanoin, Cetyl PEG/PPG-10/1 Dimethicone, PEG-10 Dimethicone
+\n\n<b>Directions</b>
+\n1 Pemakaian lipstik menggunakan kuas bisa membantu hasilnya tampak jadi merata ke seluruh permukaan bibir.
+\n2 Pulaskan lipstik pada bagian tengah permukaan bibir terlebih dahulu, lalu geser ke area sudut bibir yang lebih dalam.
+\n3 Gunakan lipstik secara perlahan sampai hasilnya sesuai dengan yang Anda inginkan.
+</string>
+    <string name="recipe_image_desc">recipe image</string>
 </resources>
