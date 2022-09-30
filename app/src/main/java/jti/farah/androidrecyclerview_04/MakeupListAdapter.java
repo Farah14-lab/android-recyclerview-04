@@ -14,53 +14,53 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-public class MakeupListAdapter extends RecyclerView.Adapter<MakeupListAdapter.RecipeViewHolder>{
-    private ArrayList<MakeupData> recipeList;
+public class MakeupListAdapter extends RecyclerView.Adapter<MakeupListAdapter.MakeupViewHolder>{
+    private ArrayList<MakeupData> MakeupList;
     private LayoutInflater mInflater;
     private View.OnClickListener mOnItemClickListener;
 
-    public MakeupListAdapter(Context context, ArrayList<MakeupData> recipeList){
+    public MakeupListAdapter(Context context, ArrayList<MakeupData> MakeupList){
         mInflater = LayoutInflater.from(context);
-        this.recipeList = recipeList;
+        this.MakeupList = MakeupList;
     }
 
     @NonNull
     @Override
-    public MakeupListAdapter.RecipeViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public MakeupListAdapter.MakeupViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View mItemView = mInflater.inflate(R.layout.item_list, viewGroup, false);
-        return new RecipeViewHolder(mItemView);
+        return new MakeupViewHolder(mItemView);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MakeupListAdapter.RecipeViewHolder recipeViewHolder, int position) {
-        recipeViewHolder.name.setText((recipeList.get(position)).getName());
-        recipeViewHolder.description.setText((recipeList.get(position)).getDescription());
-        Glide.with(recipeViewHolder.itemView)
-                .load(recipeList.get(position).getImage())
+    public void onBindViewHolder(@NonNull MakeupListAdapter.MakeupViewHolder MakeupViewHolder, int position) {
+        MakeupViewHolder.name.setText((MakeupList.get(position)).getName());
+        MakeupViewHolder.description.setText((MakeupList.get(position)).getDescription());
+        Glide.with(MakeupViewHolder.itemView)
+                .load(MakeupList.get(position).getImage())
                 .override(100, 150)
-                .into(recipeViewHolder.image);
+                .into(MakeupViewHolder.image);
     }
 
 
     @Override
     public int getItemCount() {
-        return recipeList.size();
+        return MakeupList.size();
     }
 
     public void setOnItemClickListener(View.OnClickListener onItemClickListener) {
         mOnItemClickListener = onItemClickListener;
     }
 
-    class RecipeViewHolder extends RecyclerView.ViewHolder {
+    class MakeupViewHolder extends RecyclerView.ViewHolder {
         TextView name, description;
         ImageView image;
 
 
-        public RecipeViewHolder(View itemView){
+        public MakeupViewHolder(View itemView){
             super(itemView);
-            name = itemView.findViewById(R.id.recipe_name);
-            description = itemView.findViewById(R.id.recipe_description);
-            image = itemView.findViewById(R.id.recipe_image);
+            name = itemView.findViewById(R.id.Makeup_name);
+            description = itemView.findViewById(R.id.Makeup_description);
+            image = itemView.findViewById(R.id.Makeup_image);
             itemView.setTag(this);
             itemView.setOnClickListener(mOnItemClickListener);
         }
