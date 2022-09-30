@@ -1,12 +1,12 @@
 package jti.farah.androidrecyclerview_04;
 
-public class RecipeData {
+public class MakeupData {
     private String name;
     private String description;
     private int image;
     private String details;
 
-    public RecipeData(String name, String description, int image, String details){
+    public MakeupData(String name, String description, int image, String details){
         this.setName(name);
         this.setDescription(description);
         this.setImage(image);

@@ -4,22 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
 
 import androidx.appcompat.widget.Toolbar;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import jti.farah.androidrecyclerview_04.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private final LinkedList mWordList = new LinkedList<String>();
     private RecyclerView mRecyclerView;
     private WordListAdapter mAdapter;
-    private ArrayList<RecipeData> recipeList;
+    private ArrayList<MakeupData> MakeupList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,29 +46,29 @@ public class MainActivity extends AppCompatActivity {
                 mRecyclerView.smoothScrollToPosition(wordListSize);
             }
         });
-        setRecipeList();
+        setMakeupList();
         mRecyclerView = findViewById(R.id.recyclerview);
         mAdapter = new WordListAdapter(this, mWordList);
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        RecipeListAdapter recipeListAdapter = new RecipeListAdapter(MainActivity.this, recipeList);
+        MakeupListAdapter makeupListAdapter = new MakeupListAdapter(MainActivity.this, MakeupList);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
-        mRecyclerView.setAdapter(recipeListAdapter);
-        recipeListAdapter.setOnItemClickListener(onItemClickListener);
+        mRecyclerView.setAdapter(makeupListAdapter);
+        makeupListAdapter.setOnItemClickListener(onItemClickListener);
     }
-    private void setRecipeList() {
-        recipeList = new ArrayList<>();
-        RecipeData data;
-        data = new RecipeData(getString(R.string.bedak_name), getString(R.string.bedak_description), R.drawable.bedak, getString(R.string.bedak_details));
-        recipeList.add(data);
-        data = new RecipeData(getString(R.string.blushon_name), getString(R.string.blushon_description), R.drawable.blushon, getString(R.string.blushon_details));
-        recipeList.add(data);
-        data = new RecipeData(getString(R.string.concealer_name), getString(R.string.concealer_description), R.drawable.concealer, getString(R.string.concealer_details));
-        recipeList.add(data);
-        data = new RecipeData(getString(R.string.lip_name), getString(R.string.lip_description), R.drawable.diorlip, getString(R.string.lip_details));
-        recipeList.add(data);
+    private void setMakeupList() {
+        MakeupList = new ArrayList<>();
+        MakeupData data;
+        data = new MakeupData(getString(R.string.bedak_name), getString(R.string.bedak_description), R.drawable.bedak, getString(R.string.bedak_details));
+        MakeupList.add(data);
+        data = new MakeupData(getString(R.string.blushon_name), getString(R.string.blushon_description), R.drawable.blushon, getString(R.string.blushon_details));
+        MakeupList.add(data);
+        data = new MakeupData(getString(R.string.concealer_name), getString(R.string.concealer_description), R.drawable.concealer, getString(R.string.concealer_details));
+        MakeupList.add(data);
+        data = new MakeupData(getString(R.string.lip_name), getString(R.string.lip_description), R.drawable.diorlip, getString(R.string.lip_details));
+        MakeupList.add(data);
     }
     public void openDetailActivity(int imageId, String details){
         Intent intent = new Intent(MainActivity.this, DetailActivity.class);
@@ -89,8 +82,8 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             RecyclerView.ViewHolder viewHolder = (RecyclerView.ViewHolder) v.getTag();
             int position = viewHolder.getAdapterPosition();
-            RecipeData thisRecipe = recipeList.get(position);
-            openDetailActivity(thisRecipe.getImage(), thisRecipe.getDetails());
+            MakeupData thisMakeup = MakeupList.get(position);
+            openDetailActivity(thisMakeup.getImage(), thisMakeup.getDetails());
         }
     };
 

@@ -5,23 +5,23 @@
     android:padding="8dp">
 
     <ImageView
-        android:id="@+id/recipe_image"
+        android:id="@+id/Makeup_image"
         android:layout_width="wrap_content"
         android:src="@mipmap/ic_launcher"
         android:layout_margin="8dp"
         android:layout_height="wrap_content"
-        android:contentDescription="@string/recipe_image_desc" />
+        android:contentDescription="@string/Makeup_image_desc" />
     <TextView
-        android:id="@+id/recipe_name"
-        android:layout_toRightOf="@id/recipe_image"
+        android:id="@+id/Makeup_name"
+        android:layout_toRightOf="@id/Makeup_image"
         android:layout_marginBottom="8dp"
-        style="@style/recipe_name_style"
-        android:layout_toEndOf="@id/recipe_image" />
+        style="@style/Makeup_name_style"
+        android:layout_toEndOf="@id/Makeup_image" />
     <TextView
-        android:id="@+id/recipe_description"
-        android:layout_toRightOf="@id/recipe_image"
-        android:layout_below="@id/recipe_name"
-        style="@style/recipe_description_style"
-        android:layout_toEndOf="@id/recipe_image" />
+        android:id="@+id/Makeup_description"
+        android:layout_toRightOf="@id/Makeup_image"
+        android:layout_below="@id/Makeup_name"
+        style="@style/Makeup_description_style"
+        android:layout_toEndOf="@id/Makeup_image" />
 
 </RelativeLayout>
